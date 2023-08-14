@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #9ED2BE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 32px;
+    color: white;
+    font-weight: 900;
+    background-color: #3AA6B9;
+    height: 70px;
+    line-height: 70px;
+}
+
+#message {
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: white;
+    font-weight: 900;
+    background-color: chocolate;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.2s ease-in-out;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 220px);
+    overflow: hidden;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(214, 214, 214);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: larger;
+    font-weight: 900;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.cell:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#reset {
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: white;
+    font-weight: 900;
+    background-color: #D71313;
+    height: 70px;
+    line-height: 70px;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+}
